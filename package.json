@@ -1,0 +1,19 @@
+{
+  "name": "baby-connect-lambda",
+  "version": "0.9.0",
+  "description": "Node.js Lambda function for receiving AWS IoT button presses and sending messages to an AWS SQS message queue.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/platta/baby-connect-lambda.git"
+  },
+  "author": "Adam Platt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/platta/baby-connect-lambda/issues"
+  },
+  "homepage": "https://github.com/platta/baby-connect-lambda#readme"
+}
