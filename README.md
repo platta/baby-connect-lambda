@@ -9,7 +9,7 @@ The flow is:
 - The IoT Button triggers an AWS Lambda function (__baby-connect-lambda__).
 - The Lambda function sends a message to an AWS SQS message queue.
 - A Raspberry Pi running a listener
-([baby-connect-sqs-listener](https://github/platta/baby-connect-sqs-listener))
+([baby-connect-sqs-listener](https://github.com/platta/baby-connect-sqs-listener))
 receives the message from the message queue.
 - The listener uses a library
 ([baby-connect](https://github.com/platta/baby-connect)) to log into the Baby

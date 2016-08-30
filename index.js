@@ -5,7 +5,7 @@
 const QUEUE_URL = 'Your queue url';
 
 /**
- * Modify the below to reflect the actions you want to be executed for each type
+ * Modify the below to reflect the actions you want to be recorded for each type
  * of button press.
  * 
  * - SINGLE_ACTION - Action for a single button press.
