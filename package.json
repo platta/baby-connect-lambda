@@ -1,6 +1,6 @@
 {
   "name": "baby-connect-lambda",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Node.js Lambda function for receiving AWS IoT button presses and sending messages to an AWS SQS message queue.",
   "main": "index.js",
   "scripts": {

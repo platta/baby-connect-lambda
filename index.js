@@ -2,7 +2,7 @@
 // TODO - Change these values.
 
 // Your AWS SQS Message Queue URL.
-const QUEUE_URL = 'Your queue url';
+const QUEUE_URL = 'https://sqs.us-east-1.amazonaws.com/634172033223/baby-connect';
 
 /**
  * Modify the below to reflect the actions you want to be recorded for each type
@@ -34,7 +34,7 @@ const SINGLE_ACTION = {
     type: 'diaper',
     parameters: {
         child: 'Child Name',
-        time: new Date(),
+        time: null,
         type: 'wet'
     }
 };
@@ -43,7 +43,7 @@ const DOUBLE_ACTION = {
     type: 'bottle',
     parameters: {
         child: 'Child Name',
-        time: new Date(),
+        time: null,
         amount: 1,
         type: 'formula'
     }
@@ -53,7 +53,7 @@ const LONG_ACTION = {
     type: 'diaper',
     parameters: {
         child: 'Child Name',
-        time: new Date(),
+        time: null,
         type: 'bmWet'
     }
 };
@@ -93,6 +93,8 @@ function handler(event, context, callback) {
             action = LONG_ACTION;
             break;
     }
+
+    action.parameters.time = new Date();
 
     // Build the parameters object.
     var parameters = {
